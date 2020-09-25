@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL", "CL", "{184CAADA-B5AA-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFL.Editor", "..\deps\OpenFL.Editor\src\OpenFL.Editor\OpenFL.Editor.csproj", "{0DBA7A0D-7701-4DB4-B6AE-8C3D5D2ABDDA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCL", "..\deps\OpenFL.Editor\deps\OpenFL\deps\OpenCL.Wrapper\deps\OpenCL\src\OpenCL\OpenCL.csproj", "{B30637DF-2AE7-4E21-9325-F7DFF83AC6CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCL.NET", "..\deps\OpenFL.Editor\deps\OpenFL\deps\OpenCL.Wrapper\deps\OpenCL\src\OpenCL\OpenCL.NET.csproj", "{B30637DF-2AE7-4E21-9325-F7DFF83AC6CD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCL.Wrapper", "..\deps\OpenFL.Editor\deps\OpenFL\deps\OpenCL.Wrapper\src\OpenCL.Wrapper\OpenCL.Wrapper.csproj", "{8B3E4AB0-704E-4E09-8EDA-1D987F93C231}"
 EndProject
