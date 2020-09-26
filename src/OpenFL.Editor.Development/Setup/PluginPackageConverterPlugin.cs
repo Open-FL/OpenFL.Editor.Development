@@ -8,7 +8,7 @@ namespace OpenFL.Editor.Development.Setup
     public class PluginPackageConverterPlugin : APlugin<FLEditorPluginHost>
     {
 
-        public override string Name => "fl-debugger-plugin-package-converter";
+        public override string Name => "fl-editor-plugin-package-converter";
 
         private BatchPluginPackageConverterForm bf;
 

@@ -15,7 +15,7 @@ namespace OpenFL.Editor.Development.Setup
     public class CLDevelopmentPlugin : APlugin<FLEditorPluginHost>
     {
 
-        public override string Name => "fl-debugger-open-cl-development";
+        public override string Name => "fl-editor-open-cl-development";
 
         [ToolbarItem("CL", 3)]
         private void CLDummy()
