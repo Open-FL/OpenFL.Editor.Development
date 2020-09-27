@@ -1,3 +1,4 @@
 name: fl-editor-development
 target: .\src\OpenFL.Editor.Development\bin\Debug\OpenFL.Editor.Development.dll
-#output: .\build\fl-editor-development.zip
+output: .\docs\latest\fl-editor-development.zip
+flags: INFO_TO_OUTPUT
