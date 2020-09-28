@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -6,6 +7,8 @@ using PluginSystem.Core.Pointer;
 using PluginSystem.FileSystem;
 using PluginSystem.FileSystem.PackageData;
 using PluginSystem.FileSystem.Packer;
+
+using ThemeEngine.Forms;
 
 namespace OpenFL.Editor.Development.Forms
 {
@@ -26,14 +29,14 @@ namespace OpenFL.Editor.Development.Forms
         {
             if (PluginPacker.FormatCount == 0)
             {
-                MessageBox.Show("Can not start the Packer GUI. There is no Plugin Package Format installed.");
+                StyledMessageBox.Show("Error", "Can not start the Packer GUI. There is no Plugin Package Format installed.", MessageBoxButtons.OK, SystemIcons.Error);
                 Close();
                 return;
             }
 
             if (PackageDataManager.FormatCount == 0)
             {
-                MessageBox.Show("Can not start the Packer GUI. There is no Package Data Format installed.");
+                StyledMessageBox.Show("Error", "Can not start the Packer GUI. There is no Package Data Format installed.", MessageBoxButtons.OK, SystemIcons.Error);
                 Close();
                 return;
             }

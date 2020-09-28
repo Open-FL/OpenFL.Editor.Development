@@ -1,10 +1,13 @@
-﻿using System.IO;
+﻿using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 using OpenFL.Editor.Forms;
 using OpenFL.Editor.Utils.Plugins;
 
 using PluginSystem.Utility;
+
+using ThemeEngine.Forms;
 
 using Utility.IO.Callbacks;
 using Utility.ProgressFeedback;
@@ -53,10 +56,10 @@ namespace OpenFL.Editor.Development.Setup
         public void UnpackResources()
         {
             ProgressIndicator.RunTask(UnpackResources, Application.DoEvents);
-            if (MessageBox.Show(
+            if (StyledMessageBox.Show(
                                 "Do you want to load the unpacked files? (Requires Restart)",
                                 "Unpacking Finished.",
-                                MessageBoxButtons.YesNo
+                                MessageBoxButtons.YesNo, SystemIcons.Question
                                ) ==
                 DialogResult.Yes)
             {
