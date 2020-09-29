@@ -15,8 +15,9 @@ namespace OpenFL.Editor.Development.Forms
     public partial class BatchPluginPackageConverterForm : Form
     {
 
-        private BasePluginPointer[] inputPtr;
         private readonly PluginAssemblyPointer Pointer;
+
+        private BasePluginPointer[] inputPtr;
         private string[] unpackedInputPath;
 
         public BatchPluginPackageConverterForm(PluginAssemblyPointer ptr)
@@ -29,14 +30,24 @@ namespace OpenFL.Editor.Development.Forms
         {
             if (PluginPacker.FormatCount == 0)
             {
-                StyledMessageBox.Show("Error","Can not start the Packer GUI. There is no Plugin Package Format installed.", MessageBoxButtons.OK, SystemIcons.Error);
+                StyledMessageBox.Show(
+                                      "Error",
+                                      "Can not start the Packer GUI. There is no Plugin Package Format installed.",
+                                      MessageBoxButtons.OK,
+                                      SystemIcons.Error
+                                     );
                 Close();
                 return;
             }
 
             if (PackageDataManager.FormatCount == 0)
             {
-                StyledMessageBox.Show("Error","Can not start the Packer GUI. There is no Package Data Format installed.", MessageBoxButtons.OK, SystemIcons.Error);
+                StyledMessageBox.Show(
+                                      "Error",
+                                      "Can not start the Packer GUI. There is no Package Data Format installed.",
+                                      MessageBoxButtons.OK,
+                                      SystemIcons.Error
+                                     );
                 Close();
                 return;
             }

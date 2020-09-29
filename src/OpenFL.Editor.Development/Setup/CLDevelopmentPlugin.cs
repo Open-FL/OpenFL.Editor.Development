@@ -58,10 +58,10 @@ namespace OpenFL.Editor.Development.Setup
             ProgressIndicator.RunTask(UnpackResources, Application.DoEvents);
             if (StyledMessageBox.Show(
                                       "Unpacking Finished.",
-                "Do you want to load the unpacked files? (Requires Restart)",
-                                
-                                MessageBoxButtons.YesNo, SystemIcons.Question
-                               ) ==
+                                      "Do you want to load the unpacked files? (Requires Restart)",
+                                      MessageBoxButtons.YesNo,
+                                      SystemIcons.Question
+                                     ) ==
                 DialogResult.Yes)
             {
                 Application.Restart();
@@ -73,8 +73,6 @@ namespace OpenFL.Editor.Development.Setup
         {
             Application.Restart();
         }
-
-
 
     }
 }
