@@ -1,1 +1,1 @@
-fl-editor-development|OpenFL.Editor.Development.dll|https://open-fl.github.io/OpenFL.Editor.Development/latest/info.txt|0.0.0.37|
+fl-editor-development|OpenFL.Editor.Development.dll|https://open-fl.github.io/OpenFL.Editor.Development/latest/info.txt|0.0.0.38|
