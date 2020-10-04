@@ -1,5 +1,12 @@
 name: fl-editor-development
-target: .\src\OpenFL.Editor.Development\bin\Debug\OpenFL.Editor.Development.dll
-output: .\docs\latest\fl-editor-development.zip
+branch: Debug
+project-name: OpenFL.Editor.Development
 flags: INFO_TO_OUTPUT
-origin: https://open-fl.github.io/OpenFL.Editor.Development/latest/info.txt
+
+#Build Info
+target: %buildout%\%project-name%.dll
+solution: .\src\%project-name%.sln
+output: .\docs\latest\%name%.zip
+origin: https://open-fl.github.io/%project-name%/latest/info.txt
+buildout: .\src\%project-name%\bin\%branch%
+buildcmd: msbuild {0} /t:Build /p:Configuration=%branch%
